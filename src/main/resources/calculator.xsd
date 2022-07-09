@@ -1,0 +1,71 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.pucminas.br"
+           targetNamespace="http://www.pucminas.br" elementFormDefault="qualified">
+
+    <xs:element name="sumRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element  name="num1" type="xs:float"/>
+                <xs:element  name="num2" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sumResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element  name="SumResult" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="subtractRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element  name="num1" type="xs:float"/>
+                <xs:element  name="num2" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="subtractResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element  name="SubtractResult" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="multiplyRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element  name="num1" type="xs:float"/>
+                <xs:element  name="num2" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="multiplyResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MultiplyResult" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="divideRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element  name="num1" type="xs:float"/>
+                <xs:element  name="num2" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="divideResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element  name="DivideResult" type="xs:float"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
